@@ -1,0 +1,27 @@
+# IDE files
+.idea/
+*.iml
+*.eml
+*.userlibraries
+.classpath
+.project
+
+# Build output
+bin/
+out/
+
+# OS and editor files
+*.log
+*.tmp
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Large installers and executables
+software/*.exe
+software/New folder/*.exe
+software/New folder/*.bat
+
+# Ignore IntelliJ IDEA project files in .idea (redundant, but explicit)
+.idea/ 
