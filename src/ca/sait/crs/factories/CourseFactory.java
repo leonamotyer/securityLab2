@@ -49,7 +49,7 @@ public final class CourseFactory {
      * @return True if the course code matches pattern: 3 letters followed by 3 digits
      */
     private boolean validateCode(String code) {
-        return code != null && code.matches("^[A-Za-z]{3}\\d{3}$");
+        return code != null && code.matches("^[A-Za-z]{3,5}-\\d{3}$");
     }
 
     /**
