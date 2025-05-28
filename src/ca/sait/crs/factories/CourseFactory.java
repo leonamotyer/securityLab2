@@ -46,11 +46,11 @@ public final class CourseFactory {
     /**
      * Checks the course code is valid.
      * @param code Course code
-     * @return True if the course code matches pattern: 3 letters followed by 3 digits
+     * @return True if the course code matches pattern: 3 to 5 letters followed by a dash and 3 digits
      */
     private boolean validateCode(String code) {
         // Allow formats like "ABCD-123" or "ABCD123"
-        return code != null && code.matches("^[A-Za-z]{3,4}-?\\d{3}$");
+        return code != null && code.matches("^[A-Za-z]{3,5}-\\d{3}$");
     }
 
     /**
